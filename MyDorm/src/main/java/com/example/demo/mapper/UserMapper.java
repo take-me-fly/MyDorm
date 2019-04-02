@@ -1,4 +1,12 @@
 package com.example.demo.mapper;
 
-public class UserMapper {
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.example.demo.domain.User;
+import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
+
+@Mapper
+@Repository
+public interface UserMapper extends BaseMapper<User> {
+
 }
